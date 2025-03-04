@@ -1,0 +1,333 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  height: 3000px;
+}
+
+/* Navbar Start */
+header.nav-menu {
+  display: flex;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 1.5rem;
+  margin-inline: auto;
+  width: 100%;
+  margin-inline: auto;
+  z-index: 9999;
+}
+
+header.nav-menu a.name {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+header.nav-menu a span {
+  color: yellow;
+}
+
+nav {
+  width: 5%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 8rem;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.2rem solid yellow;
+  padding-bottom: 0.5rem;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(0.4);
+}
+
+header.nav-menu button.darklight {
+  background-color: #fff;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+/* Navbar end */
+
+/* Home Start */
+Section div.container {
+  background-image: url("../assets/bgbintang1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin-inline: auto;
+  padding: 4rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 120vh;
+}
+
+div.container div.description {
+  font-size: 1.5rem;
+  flex: 1;
+  flex-grow: 1;
+  padding: 5rem;
+  text-align: center;
+}
+
+div.container div.description h1.introduction {
+  font-size: 3rem;
+  color: yellow;
+}
+
+div.container div.description p {
+  margin-top: 4rem;
+  opacity: 0.8;
+}
+
+div.container div.image img {
+  width: 500px;
+  height: 500px;
+  padding: 1.5rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  flex-grow: 1;
+}
+/* Main End */
+
+/* Project Section Start */
+section.project-column {
+  background-color: #000;
+}
+
+section header.head-projects {
+  background-color: #000;
+  width: 100%;
+  padding-top: 80px;
+}
+
+section header.head-projects h2.project-title {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+section header.head-projects span {
+  color: yellow;
+}
+
+section
+  header.head-projects
+  p.description-projects {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+section div.container-project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #000;
+  gap: 5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+section
+  div.container-project
+  article.card-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.3);
+  margin: 2rem;
+  padding: 2rem;
+  width: 450px;
+  justify-content: center;
+  color: #000;
+  background-color: #fff;
+}
+
+section
+  div.container-project
+  article.card-content
+  img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+section
+  div.container-project
+  article.card-content
+  h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+section
+  div.container-project
+  article.card-content
+  p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+section
+  div.container-project
+  article.card-content
+  button.project-button {
+  background-color: yellow;
+  border: none;
+  height: 3rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+/* Project Section End */
+
+/* Contact us start */
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+section.contact div.contact-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 1.5rem;
+}
+
+section.contact div.contact-header span {
+  color: yellow;
+}
+
+section.contact div.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  gap: 10rem;
+  margin-top: 10rem;
+}
+
+section.contact div.contact-container h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact div.contact-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+section.contact
+  div.contact-container
+  article.sosmed-info
+  div.icons {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+section.contact
+  div.contact-container
+  article.sosmed-info
+  img {
+  width: 20px;
+  height: 50px;
+  margin: 1rem;
+}
+
+section.contact
+  div.contact-container
+  article.sosmed-info
+  img:hover {
+  transform: scale(1.5);
+}
+
+section.contact
+  div.contact-container
+  article.address-info {
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  padding: 2rem;
+  margin: 0;
+  border-sizing: border-box;
+  min-height: 100px;
+}
+
+section.contact
+  div.contact-container
+  article.address-info
+  p {
+  margin-top: 2rem;
+  text-align: center;
+  min-width: 300px;
+}
+
+section.contact
+  div.contact-container
+  article.phone-info
+  p {
+  margin-top: 2rem;
+}
